@@ -195,6 +195,38 @@
     cursor: pointer;
 }
 
+/* footer related style */
+
+
+#footer-section{
+    background-color: #0A0826;
+}
+
+.footer-content{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.footer-content h3{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-content .copy-right{
+    font-size: 0.8rem;
+    color: #D9DBE1;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.footer-content a{
+    margin-left: 16px;
+    color: white;
+}
+
 /* Media quary for small device */
 
 @media screen and (max-width: 576px){
@@ -248,6 +280,48 @@
         text-align: center;
     }
     
+    /* featured products section style */
+    #featured-parent{
+        flex-direction: column;
+    }
+    #featured-parent img{
+        width: 100%;
+    }
+    .featured-text{
+        text-align: center;
+    }
 }
 
+
+/* Media quary for medium device */
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+    /* popular card related */
+
+    .card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-item{
+        text-align: center;
+    }
+    .last-text-h5{
+        text-align: left;
+    }
+
+    /* featured products related */
+    #featured-parent{
+        flex-direction: column;
+    }
+    #featured-parent img{
+        width: 100%;
+    }
+    .featured-text{
+        text-align: center;
+    }
+
+    /* footer style */
+    #footer-section{
+        width: 100%;
+    }
+}
 
